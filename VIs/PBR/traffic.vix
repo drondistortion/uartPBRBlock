@@ -37,7 +37,7 @@
                 </MethodCall>
                 <IsNotEqualTo0 Id="n37" Terminals="x\ \!\=\ 0\?=w23, x=w26" TopLeft="637 175" />
                 <Wire Id="w23" Joints="N(n37:x\ \!\=\ 0\?) N(n13:Numeric)" />
-                <DataAccessor DataItem="GREEN" Id="n13" Bounds="693 175 56 14">
+                <DataAccessor DataItem="Light" Id="n13" Bounds="693 175 56 14">
                     <Terminal Id="Numeric" Direction="Input" Wire="w23" Hotspot="0 0.5" Bounds="0 0 56 14" />
                 </DataAccessor>
                 <Wire Id="w26" Joints="N(n17:Value) N(n37:x)" />

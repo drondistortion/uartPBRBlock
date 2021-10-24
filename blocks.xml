@@ -4,9 +4,12 @@
     <PolyGroup Name="iarduino" BlockFamily="Sensor">
       <Parameter Name="Direction" Direction="Input" DataType="UInt32" DefaultValue="2" Configuration="builtin://Identification_WaitForChange.xml" Identification="builtin://Identification_WaitForChange.xml" />
       <Parameter Name="Port" CompilerDirectives="OneInputPort" Direction="Input" DefaultValue="1.3" />
-      <Parameter Name="Light" Identification="red.png" DataType="Boolean" Direction="Output" />
+      <Parameter Name="Green" Identification="green.png" DataType="Boolean" Direction="Output" />
+      <Parameter Name="GreenL" Identification="greenL.png" DataType="Boolean" Direction="Output" />
+      <Parameter Name="GreenR" Identification="greenR.png" DataType="Boolean" Direction="Output" />
+      <Parameter Name="Red" Identification="red.png" DataType="Boolean" Direction="Output" />
       <Parameter Name="Sign" Identification="sign.png" DataType="Boolean" Direction="Output" />
-      <Parameter Name="Speed" Identification="sign.png" DataType="Boolean" Direction="Output" />
+      <Parameter Name="Limit" Identification="sign.png" DataType="Boolean" Direction="Output" />
       <Hardware>
         <NXTPlotColor>#ffff3132</NXTPlotColor>
         <EV3PlotColor>#ff785028</EV3PlotColor>
@@ -19,33 +22,35 @@
         <Reference Type="VILib" Name="speed.vix" />
         <ParameterReference Name="Port" />
         <ParameterReference Name="Limit" />
-        <PaletteInfo Weight="0.5" />
-        <BlockInterface>Speed</BlockInterface>
+        <BlockInterface></BlockInterface>
         <Flags></Flags>
-        <Hardware>iArdTraffic</Hardware>
+        <Hardware></Hardware>
         <HardwareModeInfo Name="Speed" ID="2" Range="0,100" Unit="" />
+      </Block>
+      <Block>
+        <Mode>Road</Mode>
+        <ParameterReference Name="Port" />
+        <Reference Type="VILib" Name="road.vix" />
+        <ParameterReference Name="Sign" />
+        <ParamInfo Name="Set of signs" Direction="Input" Configuration="Identification_Signs.xml" Identification="Identification_Signs.xml" DataType="Single[]" DefaultValue="[5]" />
+        <BlockInterface></BlockInterface>
+        <Flags></Flags>
+        <Hardware></Hardware>
+        <HardwareModeInfo Name="Road" ID="1" Range="0,100" Unit="" />
       </Block>
       <Block>
         <Mode>Traffic</Mode>
         <Reference Type="VILib" Name="traffic.vix" />
         <ParameterReference Name="Port" />
-        <ParameterReference Name="Light" />
+        <ParameterReference Name="Green" />
+        <ParameterReference Name="GreenL" />
+        <ParameterReference Name="GreenR" />
+        <ParameterReference Name="Red" />
         <PaletteInfo Weight="0.5" />
-        <BlockInterface>Traffic</BlockInterface>
+        <BlockInterface></BlockInterface>
         <Flags></Flags>
-        <Hardware>iArdTraffic</Hardware>
-        <HardwareModeInfo Name="Traffic" ID="0" Range="0,100" Unit="" />
-      </Block>
-      <Block>
-        <Mode>Road</Mode>
-        <Reference Type="VILib" Name="road.vix" />
-        <ParameterReference Name="Port" />
-        <ParameterReference Name="Sign" />
-        <PaletteInfo Weight="0.5" />
-        <BlockInterface>Road</BlockInterface>
-        <Flags></Flags>
-        <Hardware>iArdRoad</Hardware>
-        <HardwareModeInfo Name="Road" ID="1" Range="0,100" Unit="" />
+        <Hardware></Hardware>
+        <HardwareModeInfo Name="Traffic" ID="0" Range="0,100" Unit=""></HardwareModeInfo>
       </Block>
     </PolyGroup>
   </PolyGroups>

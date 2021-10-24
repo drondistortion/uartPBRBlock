@@ -8,16 +8,31 @@
       <Parameter Name="Port" DisplayName="Port">
         <Description><![CDATA[<p>Context help for Port</p>]]></Description>
       </Parameter>
-      <Parameter Name="Light" DisplayName="OUTPUT">
+      <Parameter Name="Set of colors" DisplayName="Set of Signs">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green" DisplayName="OUTPUT">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="GreenL" DisplayName="OUTPUT">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="GreenR" DisplayName="OUTPUT">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red" DisplayName="OUTPUT">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Limit" DisplayName="OUTPUT">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
       <Parameter Name="Sign" DisplayName="OUTPUT">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Block Mode="Traffic" DisplayName="Traffic">
+      <Block Mode="Traffic" DisplayName="Traffic Light">
         <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
       </Block>
-      <Block Mode="Road" DisplayName="Road">
+      <Block Mode="Road" DisplayName="Road Sign">
         <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
       </Block>
       <Block Mode="Speed" DisplayName="Speed Limit">

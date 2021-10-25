@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definition Type="Integer">
+  <Point Value="0" Name="Stop" ImageSuffix="_Stop"/>
+  <Point Value="1" Name="DoNotEnter" ImageSuffix="_DoNotEnter"/>
+  <Point Value="2" Name="Main" ImageSuffix="_Main"/>
+  <Point Value="3" Name="Yield" ImageSuffix="_Yield"/>
+  <Point Value="4" Name="Prohibited" ImageSuffix="_Prohibited"/>
+  <Point Value="5" Name="PriorityFrom" ImageSuffix="_PriorityFrom"/>
+  <Point Value="6" Name="PriorityTo" ImageSuffix="_PriorityTo"/>
+</Definition>

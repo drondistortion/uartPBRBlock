@@ -11,23 +11,29 @@
       <Parameter Name="Set of colors" DisplayName="Set of Signs">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="Green" DisplayName="OUTPUT">
+      <Parameter Name="Green" DisplayName="Yes/No">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="GreenL" DisplayName="OUTPUT">
+      <Parameter Name="GreenL" DisplayName="Yes/No">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="GreenR" DisplayName="OUTPUT">
+      <Parameter Name="GreenR" DisplayName="Yes/No">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="Red" DisplayName="OUTPUT">
+      <Parameter Name="Red" DisplayName="Yes/No">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="Limit" DisplayName="OUTPUT">
+      <Parameter Name="Limit" DisplayName="Speed">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="Sign" DisplayName="OUTPUT">
+      <Parameter Name="Sign" DisplayName="Yes/No">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Plate" DisplayName="Plate Number">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="SignSelector" DisplayName="Sign selector">
+        <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
       </Parameter>
       <Block Mode="Traffic" DisplayName="Traffic Light">
         <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>

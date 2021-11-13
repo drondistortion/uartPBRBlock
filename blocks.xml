@@ -11,8 +11,7 @@
       <Parameter Name="Red" Identification="red.png" DataType="Boolean" Direction="Output" />
       <Parameter Name="Sign" Identification="sign.png" DataType="Boolean" Direction="Output" />
       <Parameter Name="Plate" Direction="Output" DataType="UInt32" Identification="Identification_Plate.png" />
-      <Parameter Name="Test" Direction="Output" DataType="Single" Identification="Identification_Plate.png" />
-      <Parameter Name="Limit" Identification="number.png" DataType="Single" Direction="Output" />
+      <Parameter Name="Limit" Identification="number.png" DataType="UInt32" Direction="Output" />
       <Hardware>
         <NXTPlotColor>#ffff3132</NXTPlotColor>
         <EV3PlotColor>#ff785028</EV3PlotColor>
@@ -38,7 +37,6 @@
         <ParameterReference Name="SignSelector" />
         <ParameterReference Name="Sign" />
         <ParameterReference Name="Plate" />
-        <ParameterReference Name="Test" />
         <BlockInterface></BlockInterface>
         <Flags></Flags>
         <Hardware></Hardware>

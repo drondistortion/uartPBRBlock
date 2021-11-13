@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorStrings>
+  <PolyGroups ModuleName="iarduino_UART">
+    <PolyGroup Name="iarduino" DisplayName="iarduino" DisplayNamePrefix="iarduino">
+      <Parameter Name="Direction" DisplayName="Direction">
+        <Description><![CDATA[<p>Context help for Direction</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Port" DisplayName="Port">
+        <Description><![CDATA[<p>Context help for Port</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Set of colors" DisplayName="Set of Signs">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green" DisplayName="Да/Нет">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="GreenL" DisplayName="Да/Нет">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="GreenR" DisplayName="Да/Нет">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red" DisplayName="Да/Нет">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Limit" DisplayName="Скорость">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Sign" DisplayName="Да/Нет">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Plate" DisplayName="Номер таблички">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="SignSelector" DisplayName="Выбор знака">
+        <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
+      </Parameter>
+      <Block Mode="Traffic" DisplayName="Светофор">
+        <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
+      </Block>
+      <Block Mode="Road" DisplayName="Дорожные знаки">
+        <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
+      </Block>
+      <Block Mode="Speed" DisplayName="Ограничение скорости">
+        <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorStrings>

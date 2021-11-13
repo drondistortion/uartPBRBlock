@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definition>
+  <Entry Name="Stop" DisplayName="Stop" />
+  <Entry Name="NoEntry" DisplayName="No entry" />
+  <Entry Name="Main" DisplayName="Main road" />
+  <Entry Name="Yield" DisplayName="Give way (yield)" />
+  <Entry Name="Prohibited" DisplayName="Prohibited" />
+  <Entry Name="LevelXsing" DisplayName="Level crossing" />
+  <Entry Name="DoubleBend" DisplayName="Double bend" />
+  <Entry Name="Children" DisplayName="Children" />
+  <Entry Name="EndMain" DisplayName="End of main road" />
+  <Entry Name="MotorProhibited" DisplayName="Motor vehicles except solo motorcycles prohibited" />
+  <Entry Name="GoodsProhibited" DisplayName="Goods vehicles prohibited" />
+  <Entry Name="NoOvertaking" DisplayName="No overtaking" />
+  <Entry Name="EndProhibitions" DisplayName="End of all prohibitions" />
+  <Entry Name="Straight" DisplayName="Traffic must go straight" />
+  <Entry Name="TurnR" DisplayName="Traffic must turn right" />
+  <Entry Name="TurnL" DisplayName="Traffic must turn left" />
+  <Entry Name="StraightR" DisplayName="Traffic must go straight or turn right" />
+  <Entry Name="StraightL" DisplayName="Traffic must go straight or turn left" />
+  <Entry Name="TurnLR" DisplayName="Traffic must turn left or right" />
+  <Entry Name="KeepR" DisplayName="Keep right" />
+  <Entry Name="KeepL" DisplayName="Keep left" />
+  <Entry Name="KeepLR" DisplayName="Keep left or right" />
+  <Entry Name="Roundabout" DisplayName="Roundabout" />
+  <Entry Name="Uturn" DisplayName="U turn" />
+  <Entry Name="Parking" DisplayName="Parking" />
+  <Entry Name="NoThroughRoad" DisplayName="No through road" />
+  <Entry Name="NoThroughRoadR" DisplayName="Deadend on right turn" />
+  <Entry Name="NoThroughRoadL" DisplayName="Deadend on left turn" />
+</Definition>

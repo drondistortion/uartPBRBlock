@@ -35,6 +35,9 @@
       <Parameter Name="SignSelector" DisplayName="Sign selector">
         <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
       </Parameter>
+      <Parameter Name="Test" DisplayName="FU">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
       <Block Mode="Traffic" DisplayName="Traffic Light">
         <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
       </Block>

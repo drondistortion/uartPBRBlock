@@ -26,7 +26,7 @@
                 <DataAccessor DataItem="Port" Id="n19" Bounds="329 175 70 14">
                     <Terminal Id="Value" Direction="Output" Wire="w20" Hotspot="1 0.5" Bounds="0 0 70 14" />
                 </DataAccessor>
-                <MethodCall Id="n17" Bounds="539 175 28 70" Target="X3\.Lib:PBrickInputReadySI">
+                <MethodCall Id="n17" Bounds="539 175 28 70" Target="X3\.Lib:PBrickInputReadyRaw">
                     <Terminal Id="layer" Direction="Input" Wire="w3" DataType="SByte" Hotspot="0 0.5" Bounds="0 0 14 14" />
                     <Terminal Id="port" Direction="Input" Wire="w5" DataType="SByte" Hotspot="0 0.5" Bounds="0 14 14 14" />
                     <Terminal Id="type" Direction="Input" Wire="w24" DataType="SByte" Hotspot="0 0.5" Bounds="0 28 14 14" />

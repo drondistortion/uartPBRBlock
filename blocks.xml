@@ -4,7 +4,8 @@
     <PolyGroup Name="iarduino" BlockFamily="Sensor">
       <Parameter Name="Direction" Direction="Input" DataType="UInt32" DefaultValue="2" Configuration="builtin://Identification_WaitForChange.xml" Identification="builtin://Identification_WaitForChange.xml" />
       <Parameter Name="Port" CompilerDirectives="OneInputPort" Direction="Input" DefaultValue="1.3" />
-      <Parameter Name="SignSelector" Direction="Input" Configuration="Identification_Signs.xml" Identification="Identification_Signs.xml" DataType="Int32" DefaultValue="2" />
+      <Parameter Name="SignSelector1" Direction="Input" Configuration="Identification_Signs1.xml" Identification="Identification_Signs1.xml" DataType="Int32" DefaultValue="2" />
+      <Parameter Name="SignSelector2" Direction="Input" Configuration="Identification_Signs2.xml" Identification="Identification_Signs2.xml" DataType="Int32" DefaultValue="2" />
       <Parameter Name="Green" Identification="green.png" DataType="Boolean" Direction="Output" />
       <Parameter Name="GreenL" Identification="greenL.png" DataType="Boolean" Direction="Output" />
       <Parameter Name="GreenR" Identification="greenR.png" DataType="Boolean" Direction="Output" />
@@ -31,10 +32,22 @@
         <HardwareModeInfo Name="Speed" ID="2" Range="0,100" Unit="" />
       </Block>
       <Block>
-        <Mode>Road</Mode>
-        <Reference Type="VILib" Name="road.vix" />
+        <Mode>Road1</Mode>
+        <Reference Type="VILib" Name="road1.vix" />
         <ParameterReference Name="Port" />
-        <ParameterReference Name="SignSelector" />
+        <ParameterReference Name="SignSelector1" />
+        <ParameterReference Name="Sign" />
+        <ParameterReference Name="Plate" />
+        <BlockInterface></BlockInterface>
+        <Flags></Flags>
+        <Hardware></Hardware>
+        <HardwareModeInfo Name="Road" ID="1" Range="0,100" Unit="" />
+      </Block>
+      <Block>
+        <Mode>Road2</Mode>
+        <Reference Type="VILib" Name="road2.vix" />
+        <ParameterReference Name="Port" />
+        <ParameterReference Name="SignSelector2" />
         <ParameterReference Name="Sign" />
         <ParameterReference Name="Plate" />
         <BlockInterface></BlockInterface>

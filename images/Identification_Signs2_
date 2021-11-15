@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definition Type="Integer">
+  <Point Value="0" Name="TurnR" ImageSuffix="_TurnR"/>
+  <Point Value="1" Name="TurnL" ImageSuffix="_TurnL"/>
+  <Point Value="2" Name="StraightL" ImageSuffix="_StraightL"/>
+  <Point Value="3" Name="StraightR" ImageSuffix="_StraightR"/>
+  <Point Value="4" Name="TurnLR" ImageSuffix="_TurnLR"/>
+  <Point Value="5" Name="KeepR" ImageSuffix="_KeepR"/>
+  <Point Value="6" Name="KeepL" ImageSuffix="_KeepL"/>
+  <Point Value="7" Name="KeepLR" ImageSuffix="_KeepLR"/>
+  <Point Value="8" Name="Roundabout" ImageSuffix="_Roundabout"/>
+  <Point Value="9" Name="Uturn" ImageSuffix="_Uturn"/>
+  <Point Value="10" Name="Parking" ImageSuffix="_Parking"/>
+  <Point Value="11" Name="NoThroughRoad" ImageSuffix="_NoThroughRoad"/>
+  <Point Value="12" Name="NoThroughRoadR" ImageSuffix="_NoThroughRoadR"/>
+  <Point Value="13" Name="NoThroughRoadL" ImageSuffix="_NoThroughRoadL"/>
+</Definition>

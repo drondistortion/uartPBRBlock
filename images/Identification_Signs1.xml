@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definition Type="Integer">
+  <Point Value="0" Name="Stop" ImageSuffix="_Stop"/>
+  <Point Value="1" Name="NoEntry" ImageSuffix="_DoNotEnter"/>
+  <Point Value="2" Name="Main" ImageSuffix="_Main"/>
+  <Point Value="3" Name="Yield" ImageSuffix="_Yield"/>
+  <Point Value="4" Name="Prohibited" ImageSuffix="_Prohibited"/>
+  <Point Value="5" Name="LevelXsing" ImageSuffix="_LevelCrossing"/>
+  <Point Value="6" Name="DoubleBend" ImageSuffix="_DoubleBend"/>
+  <Point Value="7" Name="Children" ImageSuffix="_Children"/>
+  <Point Value="8" Name="EndMain" ImageSuffix="_EndMain"/>
+  <Point Value="9" Name="MotorProhibited" ImageSuffix="_MotorProhibited"/>
+  <Point Value="10" Name="GoodsProhibited" ImageSuffix="_GoodsProhibited"/>
+  <Point Value="11" Name="NoOvertaking" ImageSuffix="_NoOvertaking"/>
+  <Point Value="12" Name="EndProhibitions" ImageSuffix="_EndProhibitions"/>
+</Definition>

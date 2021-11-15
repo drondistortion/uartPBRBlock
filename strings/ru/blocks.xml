@@ -32,13 +32,19 @@
       <Parameter Name="Plate" DisplayName="Номер таблички">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="SignSelector" DisplayName="Выбор знака">
+      <Parameter Name="SignSelector1" DisplayName="Выбор знака">
+        <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
+      </Parameter>
+      <Parameter Name="SignSelector2" DisplayName="Выбор знака">
         <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
       </Parameter>
       <Block Mode="Traffic" DisplayName="Светофор">
         <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
       </Block>
-      <Block Mode="Road" DisplayName="Дорожные знаки">
+      <Block Mode="Road1" DisplayName="Дорожные знаки 1">
+        <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
+      </Block>
+      <Block Mode="Road2" DisplayName="Дорожные знаки 2">
         <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
       </Block>
       <Block Mode="Speed" DisplayName="Ограничение скорости">

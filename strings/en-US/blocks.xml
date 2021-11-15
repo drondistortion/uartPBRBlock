@@ -32,7 +32,10 @@
       <Parameter Name="Plate" DisplayName="Plate Number">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="SignSelector" DisplayName="Sign selector">
+      <Parameter Name="SignSelector1" DisplayName="Sign selector">
+        <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
+      </Parameter>
+      <Parameter Name="SignSelector2" DisplayName="Sign selector">
         <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
       </Parameter>
       <Parameter Name="Test" DisplayName="FU">
@@ -41,7 +44,10 @@
       <Block Mode="Traffic" DisplayName="Traffic Light">
         <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
       </Block>
-      <Block Mode="Road" DisplayName="Road Sign">
+      <Block Mode="Road1" DisplayName="Road Signs 1">
+        <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
+      </Block>
+      <Block Mode="Road2" DisplayName="Road Signs 2">
         <Description><![CDATA[<p>Context help for Measure Sensor Value</p>]]></Description>
       </Block>
       <Block Mode="Speed" DisplayName="Speed Limit">

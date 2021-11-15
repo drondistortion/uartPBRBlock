@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definition>
+  <Entry Name="Stop" DisplayName="Движение без остановки запрещено" />
+  <Entry Name="NoEntry" DisplayName="Въезд запрещен" />
+  <Entry Name="Main" DisplayName="Главная дорога" />
+  <Entry Name="Yield" DisplayName="Уступите дорогу" />
+  <Entry Name="Prohibited" DisplayName="Движение запрещено" />
+  <Entry Name="LevelXsing" DisplayName="Железнодорожный переезд со шлагбаумом" />
+  <Entry Name="DoubleBend" DisplayName="Опасные повороты" />
+  <Entry Name="Children" DisplayName="Дети" />
+  <Entry Name="EndMain" DisplayName="Конец главной дороги" />
+  <Entry Name="MotorProhibited" DisplayName="Движение механических транспортных средств запрещено" />
+  <Entry Name="GoodsProhibited" DisplayName="Движение грузовых автомобилей запрещено" />
+  <Entry Name="NoOvertaking" DisplayName="Обгон запрещён" />
+  <Entry Name="EndProhibitions" DisplayName="Конец зоны всех ограничений" />
+  <Entry Name="Straight" DisplayName="Движение прямо" />
+  <Entry Name="TurnR" DisplayName="Движение направо" />
+  <Entry Name="TurnL" DisplayName="Движение налево" />
+  <Entry Name="StraightR" DisplayName="Движение прямо или направо" />
+  <Entry Name="StraightL" DisplayName="Движение прямо или налево" />
+  <Entry Name="TurnLR" DisplayName="Движение направо или налево" />
+  <Entry Name="KeepR" DisplayName="Объезд препятствия справа" />
+  <Entry Name="KeepL" DisplayName="Объезд препятствия слева" />
+  <Entry Name="KeepLR" DisplayName="Объезд препятствия справа или слева" />
+  <Entry Name="Roundabout" DisplayName="Круговое движение" />
+  <Entry Name="Uturn" DisplayName="Место для разворота" />
+  <Entry Name="Parking" DisplayName="Парковка (парковочное место)" />
+  <Entry Name="NoThroughRoad" DisplayName="Тупик" />
+  <Entry Name="NoThroughRoadR" DisplayName="Тупик" />
+  <Entry Name="NoThroughRoadL" DisplayName="Тупик" />
+</Definition>

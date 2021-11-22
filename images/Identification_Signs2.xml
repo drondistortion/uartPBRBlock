@@ -3,8 +3,8 @@
   <Point Value="0" Name="Straight" ImageSuffix="_Straight"/>
   <Point Value="1" Name="TurnR" ImageSuffix="_TurnR"/>
   <Point Value="2" Name="TurnL" ImageSuffix="_TurnL"/>
-  <Point Value="3" Name="StraightL" ImageSuffix="_StraightL"/>
-  <Point Value="4" Name="StraightR" ImageSuffix="_StraightR"/>
+  <Point Value="3" Name="StraightR" ImageSuffix="_StraightR"/>
+  <Point Value="4" Name="StraightL" ImageSuffix="_StraightL"/>
   <Point Value="5" Name="TurnLR" ImageSuffix="_TurnLR"/>
   <Point Value="6" Name="KeepR" ImageSuffix="_KeepR"/>
   <Point Value="7" Name="KeepL" ImageSuffix="_KeepL"/>

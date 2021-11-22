@@ -29,7 +29,10 @@
       <Parameter Name="Sign" DisplayName="Да/Нет">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="Plate" DisplayName="Номер таблички">
+      <Parameter Name="PlateDistance" DisplayName="Расстояние до объекта или зона действия">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="PlateCarTruck" DisplayName="Действие знака: 1 - Грузовые автомобили, 2 - легковые автомобили">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
       <Parameter Name="SignSelector1" DisplayName="Выбор знака">

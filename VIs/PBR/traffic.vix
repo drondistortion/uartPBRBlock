@@ -18,22 +18,22 @@
                 <DataAccessor DataItem="Green" Id="n14" Bounds="1526 322 70 14">
                     <Terminal Id="Value" Direction="Input" Wire="w36" Hotspot="0 0.5" Bounds="0 0 70 14" />
                 </DataAccessor>
-                <Literal Id="n25" Terminals="Out=w24" Bounds="602 203 28 14" Interpretation="Exact" DataType="Byte">0</Literal>
+                <Literal Id="n25" Terminals="Out=w24" Bounds="504 203 28 14" Interpretation="Exact" DataType="Byte">0</Literal>
                 <Wire Id="w24" Joints="N(n25:Out) N(n41:type)" />
-                <Literal Id="n11" Terminals="Out=w12" Bounds="602 217 28 14" Interpretation="Exact" DataType="Byte">0</Literal>
+                <Literal Id="n11" Terminals="Out=w12" Bounds="504 217 28 14" Interpretation="Exact" DataType="Byte">0</Literal>
                 <Wire Id="w12" Joints="N(n11:Out) N(n41:Mode)" />
                 <Wire Id="w20" Joints="N(n19:Value) N(n10:port)" />
-                <DataAccessor DataItem="Port" Id="n19" Bounds="483 175 70 14">
+                <DataAccessor DataItem="Port" Id="n19" Bounds="462 175 70 14">
                     <Terminal Id="Value" Direction="Output" Wire="w20" Hotspot="1 0.5" Bounds="0 0 70 14" />
                 </DataAccessor>
-                <Literal Id="n15" Terminals="Out=w15" Bounds="602 231 28 14" Interpretation="Exact" DataType="Byte">8</Literal>
+                <Literal Id="n15" Terminals="Out=w15" Bounds="504 231 28 14" Interpretation="Exact" DataType="Byte">8</Literal>
                 <Wire Id="w15" Joints="N(n15:Out) N(n41:ValueCount)" />
-                <MethodCall Id="n10" Bounds="567 175 28 28" Target="X3\.Lib:PBrickPortConvertInput">
+                <MethodCall Id="n10" Bounds="539 175 28 28" Target="X3\.Lib:PBrickPortConvertInput">
                     <Terminal Id="port" Direction="Input" Wire="w20" DataType="Int32" Hotspot="0 0.5" Bounds="0 0 14 14" />
                     <Terminal Id="layer" Direction="Output" Wire="w3" DataType="SByte" Hotspot="1 0.5" Bounds="14 0 14 14" />
                     <Terminal Id="portOut" Direction="Output" Wire="w5" DataType="SByte" Hotspot="1 0.5" Bounds="14 14 14 14" />
                 </MethodCall>
-                <MethodCall Id="n41" Bounds="651 175 28 112" Target="X3\.Lib:PBrickInputReadySI8">
+                <MethodCall Id="n41" Bounds="588 175 28 112" Target="X3\.Lib:PBrickInputReadySI8">
                     <Terminal Id="layer" Direction="Input" Wire="w3" DataType="SByte" Hotspot="0 0.5" Bounds="0 0 14 14" />
                     <Terminal Id="port" Direction="Input" Wire="w5" DataType="SByte" Hotspot="0 0.5" Bounds="0 14 14 14" />
                     <Terminal Id="type" Direction="Input" Wire="w24" DataType="SByte" Hotspot="0 0.5" Bounds="0 28 14 14" />
@@ -48,13 +48,13 @@
                     <Terminal Id="Value7" Direction="Output" DataType="Single" Hotspot="1 0.5" Bounds="14 84 14 14" />
                     <Terminal Id="Value8" Direction="Output" DataType="Single" Hotspot="1 0.5" Bounds="14 98 14 14" />
                 </MethodCall>
-                <DataAccessor DataItem="GreenL" Id="n16" Bounds="1526 378 70 14">
+                <DataAccessor DataItem="GreenL" Id="n16" Bounds="1526 371 70 14">
                     <Terminal Id="Value" Direction="Input" Wire="w38" Hotspot="0 0.5" Bounds="0 0 70 14" />
                 </DataAccessor>
-                <DataAccessor DataItem="GreenR" Id="n17" Bounds="1526 427 70 14">
+                <DataAccessor DataItem="GreenR" Id="n17" Bounds="1526 420 70 14">
                     <Terminal Id="Value" Direction="Input" Wire="w34" Hotspot="0 0.5" Bounds="0 0 70 14" />
                 </DataAccessor>
-                <DataAccessor DataItem="Red" Id="n18" Bounds="1526 476 70 14">
+                <DataAccessor DataItem="Red" Id="n18" Bounds="1526 469 70 14">
                     <Terminal Id="Value" Direction="Input" Wire="w32" Hotspot="0 0.5" Bounds="0 0 70 14" />
                 </DataAccessor>
                 <WhileLoop Id="n20" Bounds="770 112 560 434" DiagramId="d0">
@@ -70,7 +70,7 @@
                     <Wire Id="w12" Joints="N(n49:x\ \&lt;\ y\?) N(n2:Input)" />
                     <QuotientAndRemainder Id="n13" Terminals="floor\(x\/y\)=w17, x\-y\*floor\(x\/y\)=w18, y=w20, x=w15" TopLeft="56 56" />
                     <Wire Id="w15" Joints="N(b51:i0) N(n13:x)" />
-                    <Wire Id="w17" Joints="N(n13:floor\(x\/y\)) h(191) v(315) N(n49:x) B(1) h(257) v(-14) N(b50:d0)" />
+                    <Wire Id="w17" Joints="N(n13:floor\(x\/y\)) h(191) h(257) v(-14) N(b50:d0) B(1) v(315) N(n49:x)" />
                     <Wire Id="w18" Joints="N(n13:x\-y\*floor\(x\/y\)) h(336) v(266) N(n24:c0t1v)" />
                     <Literal Id="n22" Terminals="Out=w20" Bounds="14 70 28 14" Interpretation="Exact" DataType="Byte">10</Literal>
                     <Wire Id="w20" Joints="N(n22:Out) N(n13:y)" />
@@ -92,27 +92,38 @@
                 <Wire Id="w38" Joints="N(n44:x\ \&gt;\ 0\?) N(n16:Value)" />
                 <Literal Id="n36" Terminals="Out=w37" Bounds="1393 322 28 14" Interpretation="Exact" DataType="Byte">0</Literal>
                 <Wire Id="w37" Joints="N(n36:Out) N(n30:c0t0v)" />
-                <Literal Id="n38" Terminals="Out=w51" Bounds="1393 378 28 14" Interpretation="Exact" DataType="Byte">1</Literal>
-                <Literal Id="n40" Terminals="Out=w54" Bounds="1393 427 28 14" Interpretation="Exact" DataType="Byte">2</Literal>
-                <Literal Id="n42" Terminals="Out=w55" Bounds="1393 476 28 14" Interpretation="Exact" DataType="Byte">3</Literal>
-                <Wire Id="w44" Joints="N(b25:n20) h(7) v(-105) h(43) v(56) v(49) N(n49:array) B(5) v(49) N(n50:array) B(4) N(n48:array) B(3) N(n30:array)" />
+                <Literal Id="n38" Terminals="Out=w51" Bounds="1393 371 28 14" Interpretation="Exact" DataType="Byte">1</Literal>
+                <Literal Id="n40" Terminals="Out=w54" Bounds="1393 420 28 14" Interpretation="Exact" DataType="Byte">2</Literal>
+                <Literal Id="n42" Terminals="Out=w55" Bounds="1393 469 28 14" Interpretation="Exact" DataType="Byte">3</Literal>
+                <Wire Id="w44" Joints="N(b25:n20) h(7) v(-105) h(43) N(n30:array) B(3) v(49) N(n48:array) B(5) v(49) v(49) N(n50:array) B(7) N(n49:array)" />
                 <IsGreaterThan0 Id="n43" Terminals="x\ \&gt;\ 0\?=w36, x=w45" TopLeft="1477 322" />
-                <IsGreaterThan0 Id="n44" Terminals="x\ \&gt;\ 0\?=w38, x=w56" TopLeft="1477 378" />
-                <IsGreaterThan0 Id="n45" Terminals="x\ \&gt;\ 0\?=w34, x=w57" TopLeft="1477 427" />
-                <IsGreaterThan0 Id="n46" Terminals="x\ \&gt;\ 0\?=w32, x=w58" TopLeft="1477 476" />
+                <IsGreaterThan0 Id="n44" Terminals="x\ \&gt;\ 0\?=w38, x=w56" TopLeft="1477 371" />
+                <IsGreaterThan0 Id="n45" Terminals="x\ \&gt;\ 0\?=w34, x=w57" TopLeft="1477 420" />
+                <IsGreaterThan0 Id="n46" Terminals="x\ \&gt;\ 0\?=w32, x=w58" TopLeft="1477 469" />
                 <Wire Id="w45" Joints="N(n30:c0t1v) N(n43:x)" />
                 <ToUnsignedLongInteger Id="n51" Terminals="unsigned\ 32bit\ integer=w52, number=w53" TopLeft="728 175" />
                 <Wire Id="w52" Joints="N(n51:unsigned\ 32bit\ integer) N(b51:o0)" />
                 <Wire Id="w53" Joints="N(n41:Value1) N(n51:number)" />
-                <ArrayIndex Rank="1" VerticalChunkCount="1" Id="n48" Terminals="array=w44, c0t0v=w51, c0t1v=w56" Bounds="1435 364 28 28" />
-                <ArrayIndex Rank="1" VerticalChunkCount="1" Id="n49" Terminals="array=w44, c0t0v=w54, c0t1v=w57" Bounds="1435 413 28 28" />
-                <ArrayIndex Rank="1" VerticalChunkCount="1" Id="n50" Terminals="array=w44, c0t0v=w55, c0t1v=w58" Bounds="1435 462 28 28" />
+                <ArrayIndex Rank="1" VerticalChunkCount="1" Id="n48" Terminals="array=w44, c0t0v=w51, c0t1v=w56" Bounds="1435 357 28 28" />
+                <ArrayIndex Rank="1" VerticalChunkCount="1" Id="n49" Terminals="array=w44, c0t0v=w54, c0t1v=w57" Bounds="1435 406 28 28" />
+                <ArrayIndex Rank="1" VerticalChunkCount="1" Id="n50" Terminals="array=w44, c0t0v=w55, c0t1v=w58" Bounds="1435 455 28 28" />
                 <Wire Id="w51" Joints="N(n38:Out) N(n48:c0t0v)" />
                 <Wire Id="w54" Joints="N(n40:Out) N(n49:c0t0v)" />
                 <Wire Id="w55" Joints="N(n42:Out) N(n50:c0t0v)" />
                 <Wire Id="w56" Joints="N(n48:c0t1v) N(n44:x)" />
                 <Wire Id="w57" Joints="N(n49:c0t1v) N(n45:x)" />
                 <Wire Id="w58" Joints="N(n50:c0t1v) N(n46:x)" />
+                <Comment Bounds="623 168 91 133" SizeMode="User" AttachStyle="Free">
+                    <Content>светофор
+перекрёсток
+nc
+nc
+nc
+знак
+скорость/вес
+табличка
+</Content>
+                </Comment>
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>

@@ -29,7 +29,10 @@
       <Parameter Name="Sign" DisplayName="Yes/No">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="Plate" DisplayName="Plate Number">
+      <Parameter Name="PlateDistance" DisplayName="Supplementary plate: distance to object">
+        <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
+      </Parameter>
+      <Parameter Name="PlateCarTruck" DisplayName="Supplementary plate: applies to...">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
       <Parameter Name="SignSelector1" DisplayName="Sign selector">

@@ -11,7 +11,8 @@
       <Parameter Name="GreenR" Identification="greenR.png" DataType="Boolean" Direction="Output" />
       <Parameter Name="Red" Identification="red.png" DataType="Boolean" Direction="Output" />
       <Parameter Name="Sign" Identification="sign.png" DataType="Boolean" Direction="Output" />
-      <Parameter Name="Plate" Direction="Output" DataType="UInt32" Identification="Identification_Plate.png" />
+      <Parameter Name="PlateDistance" Direction="Output" DataType="UInt32" Identification="signs_distance.png" />
+      <Parameter Name="PlateCarTruck" Direction="Output" DataType="UInt32" Identification="signs_car_truck.png" />
       <Parameter Name="Limit" Identification="number.png" DataType="UInt32" Direction="Output" />
       <Hardware>
         <NXTPlotColor>#ffff3132</NXTPlotColor>
@@ -25,7 +26,8 @@
         <Reference Type="VILib" Name="speed.vix" />
         <ParameterReference Name="Port" />
         <ParameterReference Name="Limit" />
-        <ParameterReference Name="Plate" />
+        <ParameterReference Name="PlateCarTruck" />
+        <ParameterReference Name="PlateDistance" />
         <BlockInterface></BlockInterface>
         <Flags></Flags>
         <Hardware></Hardware>
@@ -37,7 +39,8 @@
         <ParameterReference Name="Port" />
         <ParameterReference Name="SignSelector1" />
         <ParameterReference Name="Sign" />
-        <ParameterReference Name="Plate" />
+        <ParameterReference Name="PlateCarTruck" />
+        <ParameterReference Name="PlateDistance" />
         <BlockInterface></BlockInterface>
         <Flags></Flags>
         <Hardware></Hardware>
@@ -49,7 +52,8 @@
         <ParameterReference Name="Port" />
         <ParameterReference Name="SignSelector2" />
         <ParameterReference Name="Sign" />
-        <ParameterReference Name="Plate" />
+        <ParameterReference Name="PlateCarTruck" />
+        <ParameterReference Name="PlateDistance" />
         <BlockInterface></BlockInterface>
         <Flags></Flags>
         <Hardware></Hardware>

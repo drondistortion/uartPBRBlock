@@ -11,22 +11,22 @@
       <Parameter Name="Set of colors" DisplayName="Set of Signs">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="Green" DisplayName="Да/Нет">
+      <Parameter Name="Green" DisplayName="0: не горит, 1: горит">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="GreenL" DisplayName="Да/Нет">
+      <Parameter Name="GreenL" DisplayName="0: не горит, 1: горит">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="GreenR" DisplayName="Да/Нет">
+      <Parameter Name="GreenR" DisplayName="0: не горит, 1: горит">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="Red" DisplayName="Да/Нет">
+      <Parameter Name="Red" DisplayName="0: не горит, 1: горит">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
       <Parameter Name="Limit" DisplayName="Скорость">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="Sign" DisplayName="Да/Нет">
+      <Parameter Name="Sign" DisplayName="0: нет знака, 1: есть знак">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
       <Parameter Name="PlateDistance" DisplayName="Расстояние до объекта или зона действия">

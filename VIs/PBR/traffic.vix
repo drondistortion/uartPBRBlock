@@ -70,21 +70,20 @@
                     <Wire Id="w12" Joints="N(n49:x\ \&lt;\ y\?) N(n2:Input)" />
                     <QuotientAndRemainder Id="n13" Terminals="floor\(x\/y\)=w17, x\-y\*floor\(x\/y\)=w18, y=w20, x=w15" TopLeft="56 56" />
                     <Wire Id="w15" Joints="N(b51:i0) N(n13:x)" />
-                    <Wire Id="w17" Joints="N(n13:floor\(x\/y\)) h(191) h(257) v(-14) N(b50:d0) B(1) v(315) N(n49:x)" />
+                    <Wire Id="w17" Joints="N(n13:floor\(x\/y\)) h(191) v(315) N(n49:x) B(1) h(257) v(-14) N(b50:d0)" />
                     <Wire Id="w18" Joints="N(n13:x\-y\*floor\(x\/y\)) h(336) v(266) N(n24:c0t1v)" />
                     <Literal Id="n22" Terminals="Out=w20" Bounds="14 70 28 14" Interpretation="Exact" DataType="Byte">10</Literal>
                     <Wire Id="w20" Joints="N(n22:Out) N(n13:y)" />
                     <WhileLoop.RightShiftRegister Id="b25" Terminals="n20=w44, d0=w7" TopLeft="546 301" />
-                    <WhileLoop.LeftShiftRegister RightRegister="b25" Id="b26" Terminals="o0=w25, i0=w5" TopLeft="0 301" />
+                    <WhileLoop.LeftShiftRegister RightRegister="b25" Id="b26" Terminals="o0=w63, i0=w5" TopLeft="0 301" />
                     <WhileLoop.RightShiftRegister Id="b50" Terminals="n20, d0=w17" TopLeft="546 63" />
                     <WhileLoop.LeftShiftRegister RightRegister="b50" Id="b51" Terminals="o0=w52, i0=w15" TopLeft="0 63" />
                 </WhileLoop>
-                <InitializeArray VerticalChunkCount="1" Id="n21" Terminals="element=w23, outArray=w25, c0t0v=w21" Bounds="672 413 28 28" />
-                <Literal Id="n22" Terminals="Out=w21" Bounds="609 427 28 14" Interpretation="Exact" DataType="Byte">10</Literal>
-                <Wire Id="w21" Joints="N(n22:Out) N(n21:c0t0v)" />
-                <Literal Id="n23" Terminals="Out=w23" Bounds="609 413 28 14" Interpretation="Exact" DataType="Byte">0</Literal>
+                <InitializeArray VerticalChunkCount="1" Id="n21" Terminals="element=w23, outArray=w59, c0t0v=w21" Bounds="406 413 28 28" />
+                <Literal Id="n22" Terminals="Out=w21" Bounds="364 427 28 14" Interpretation="Exact" DataType="Byte">10</Literal>
+                <Wire Id="w21" Joints="N(n22:Out) h(7) N(n21:c0t0v) B(1) v(-42) N(b62:n0)" />
+                <Literal Id="n23" Terminals="Out=w23" Bounds="364 413 28 14" Interpretation="Exact" DataType="UInt32">0</Literal>
                 <Wire Id="w23" Joints="N(n23:Out) N(n21:element)" />
-                <Wire Id="w25" Joints="N(n21:outArray) N(b26:o0)" />
                 <ArrayIndex Rank="1" VerticalChunkCount="1" Id="n30" Terminals="array=w44, c0t0v=w37, c0t1v=w45" Bounds="1435 308 28 28" />
                 <Wire Id="w32" Joints="N(n46:x\ \&gt;\ 0\?) N(n18:Value)" />
                 <Wire Id="w34" Joints="N(n45:x\ \&gt;\ 0\?) N(n17:Value)" />
@@ -95,7 +94,7 @@
                 <Literal Id="n38" Terminals="Out=w51" Bounds="1393 371 28 14" Interpretation="Exact" DataType="Byte">1</Literal>
                 <Literal Id="n40" Terminals="Out=w54" Bounds="1393 420 28 14" Interpretation="Exact" DataType="Byte">2</Literal>
                 <Literal Id="n42" Terminals="Out=w55" Bounds="1393 469 28 14" Interpretation="Exact" DataType="Byte">3</Literal>
-                <Wire Id="w44" Joints="N(b25:n20) h(7) v(-105) h(43) N(n30:array) B(3) v(49) N(n48:array) B(5) v(49) v(49) N(n50:array) B(7) N(n49:array)" />
+                <Wire Id="w44" Joints="N(b25:n20) h(7) v(-105) h(43) v(49) v(49) N(n49:array) B(5) v(49) N(n50:array) B(4) N(n48:array) B(3) N(n30:array)" />
                 <IsGreaterThan0 Id="n43" Terminals="x\ \&gt;\ 0\?=w36, x=w45" TopLeft="1477 322" />
                 <IsGreaterThan0 Id="n44" Terminals="x\ \&gt;\ 0\?=w38, x=w56" TopLeft="1477 371" />
                 <IsGreaterThan0 Id="n45" Terminals="x\ \&gt;\ 0\?=w34, x=w57" TopLeft="1477 420" />
@@ -124,6 +123,23 @@ nc
 табличка
 </Content>
                 </Comment>
+                <Comment Bounds="553 357 168 28" SizeMode="User" AttachStyle="Free">
+                    <Content>Initialized array my arse!</Content>
+                </Comment>
+                <Wire Id="w59" Joints="N(n21:outArray) N(b64:o0)" />
+                <ForLoop DiagramId="D64" Id="n0" Bounds="566 384 140 140">
+                    <ForLoop.Iteration Id="n1" Terminals="Output=w8" TopLeft="7 112" />
+                    <ReplaceArraySubset Rank="1" VerticalChunkCount="1" Id="n24" Terminals="inArray=w5, outArray=w61, c0t0v=w8, c0t1v=w10" Bounds="84 28 28 42" />
+                    <Wire Id="w5" Joints="N(b64:i0) N(n24:inArray)" />
+                    <Wire Id="w61" Joints="N(n24:outArray) N(b61:D64)" />
+                    <Wire Id="w8" Joints="N(n1:Output) h(7) v(-70) N(n24:c0t0v)" />
+                    <Literal Id="n73" Terminals="Out=w10" Bounds="35 56 28 14" Interpretation="Exact" DataType="UInt32">0</Literal>
+                    <Wire Id="w10" Joints="N(n73:Out) N(n24:c0t1v)" />
+                    <ForLoop.Count Id="b62" Terminals="n0=w21, D64" />
+                    <ForLoop.RightShiftRegister Id="b61" Terminals="n0=w63, D64=w61" TopLeft="126 29" />
+                    <ForLoop.LeftShiftRegister RightRegister="b61" Id="b64" Terminals="o0=w59, i0=w5" TopLeft="0 29" />
+                </ForLoop>
+                <Wire Id="w63" Joints="N(b61:n0) N(b26:o0)" />
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>

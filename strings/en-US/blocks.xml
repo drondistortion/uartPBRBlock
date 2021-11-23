@@ -11,16 +11,16 @@
       <Parameter Name="Set of colors" DisplayName="Set of Signs">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="Green" DisplayName="Yes/No">
+      <Parameter Name="Green" DisplayName="0: off, 1: on">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="GreenL" DisplayName="Yes/No">
+      <Parameter Name="GreenL" DisplayName="0: off, 1: on">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="GreenR" DisplayName="Yes/No">
+      <Parameter Name="GreenR" DisplayName="0: off, 1: on">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
-      <Parameter Name="Red" DisplayName="Yes/No">
+      <Parameter Name="Red" DisplayName="0: off, 1: on">
         <Description><![CDATA[<p>Context help for Compare Type</p>]]></Description>
       </Parameter>
       <Parameter Name="Limit" DisplayName="Speed">

@@ -58,17 +58,17 @@
                     <Terminal Id="Value8" Direction="Output" Wire="w45" DataType="Single" Hotspot="1 0.5" Bounds="14 98 14 14" />
                 </MethodCall>
                 <ToUnsignedLongInteger Id="n25" Terminals="unsigned\ 32bit\ integer=w29, number=w39" TopLeft="623 63" />
-                <ToUnsignedLongInteger Id="n28" Terminals="unsigned\ 32bit\ integer=w50, number=w45" TopLeft="623 91" />
+                <ToUnsignedLongInteger Id="n28" Terminals="unsigned\ 32bit\ integer=w52, number=w45" TopLeft="623 91" />
                 <Wire Id="w29" Joints="N(n25:unsigned\ 32bit\ integer) h(56) v(77) N(n16:x)" />
                 <Wire Id="w38" Joints="N(n19:Value) N(n22:port)" />
                 <Wire Id="w41" Joints="N(n29:x\ \&lt;\ y\?) N(n33:y)" />
                 <Wire Id="w42" Joints="N(n33:x\*y) N(n18:Value)" />
-                <DataAccessor DataItem="PlateCarTruck" Id="n18" Bounds="910 0 112 14">
+                <DataAccessor DataItem="PlateCarTruck" Id="n18" Bounds="854 0 112 14">
                     <Terminal Id="Value" Direction="Input" Wire="w42" Hotspot="0 0.5" Bounds="0 0 112 14" />
                 </DataAccessor>
-                <IsLess Id="n29" Terminals="x\ \&lt;\ y\?=w41, y=w46, x=w50" TopLeft="749 0" />
-                <Multiply Id="n33" Terminals="x\*y=w42, y=w41, x=w50" TopLeft="812 -7" />
-                <DataAccessor DataItem="PlateDistance" Id="n42" Bounds="1050 154 105 14">
+                <IsLess Id="n29" Terminals="x\ \&lt;\ y\?=w41, y=w46, x=w52" TopLeft="749 0" />
+                <Multiply Id="n33" Terminals="x\*y=w42, y=w41, x=w52" TopLeft="812 -7" />
+                <DataAccessor DataItem="PlateDistance" Id="n42" Bounds="1267 154 105 14">
                     <Terminal Id="Value" Direction="Input" Wire="w47" Hotspot="0 0.5" Bounds="0 0 105 14" />
                 </DataAccessor>
                 <Wire Id="w39" Joints="N(n41:Value6) N(n25:number)" />
@@ -85,18 +85,18 @@ nc
 табличка
 </Content>
                 </Comment>
-                <Wire Id="w49" Joints="N(n44:Out) N(n45:array)" />
-                <Literal Facade="ArrayConstantFacade" Id="n44" Terminals="Out=w49" Bounds="910 140 56 112" Interpretation="Exact" DataType="UInt32[]">[0,0,0,50,100,150,200,250]</Literal>
-                <ArrayIndex Rank="1" VerticalChunkCount="1" Id="n45" Terminals="array=w49, c0t0v=w51, c0t1v=w47" Bounds="1001 140 28 28" />
+                <Wire Id="w49" Joints="N(n44:Out) h(14) N(n45:array) B(1) v(-28) N(n49:array)" />
+                <Literal Facade="ArrayConstantFacade" Id="n44" Terminals="Out=w49" Bounds="889 140 56 112" Interpretation="Exact" DataType="UInt32[]">[0,0,0,50,100,150,200,250]</Literal>
+                <ArrayIndex Rank="1" VerticalChunkCount="1" Id="n45" Terminals="array=w49, c0t0v=w51, c0t1v=w47" Bounds="1169 140 28 28" />
                 <Wire Id="w47" Joints="N(n45:c0t1v) N(n42:Value)" />
                 <Wire Id="w46" Joints="N(n43:Out) N(n29:y)" />
-                <Literal Id="n47" Terminals="Out=w43" Bounds="749 98 28 14" Interpretation="Exact" DataType="Byte">7</Literal>
-                <Wire Id="w43" Joints="N(n47:Out) N(n46:y)" />
-                <Multiply Id="n48" Terminals="x\*y=w51, y=w48, x=w50" TopLeft="868 77" />
-                <IsLess Id="n46" Terminals="x\ \&lt;\ y\?=w48, y=w43, x=w50" TopLeft="812 84" />
-                <Wire Id="w48" Joints="N(n46:x\ \&lt;\ y\?) N(n48:y)" />
-                <Wire Id="w50" Joints="N(n28:unsigned\ 32bit\ integer) h(7) v(-119) h(76) h(55) v(89) v(23) N(n46:x) B(5) h(65) v(16) N(n48:x) B(4) h(9) v(21) N(n33:x) B(3) v(28) N(n29:x)" />
-                <Wire Id="w51" Joints="N(n48:x\*y) h(98) v(70) N(n45:c0t0v)" />
+                <Multiply Id="n48" Terminals="x\*y=w51, y=w48, x=w52" TopLeft="1120 -35" />
+                <IsLess Id="n46" Terminals="x\ \&lt;\ y\?=w48, y=w50, x=w52" TopLeft="1057 98" />
+                <Wire Id="w48" Joints="N(n46:x\ \&lt;\ y\?) h(28) v(-126) N(n48:y)" />
+                <Wire Id="w51" Joints="N(n48:x\*y) h(7) v(182) N(n45:c0t0v)" />
+                <ArraySize Id="n49" Terminals="size\(s\)=w50, array=w49" TopLeft="1008 112" />
+                <Wire Id="w52" Joints="N(n28:unsigned\ 32bit\ integer) h(7) v(-126) h(76) h(71) h(203) N(n48:x) B(5) v(133) N(n46:x) B(4) v(28) N(n33:x) B(3) v(35) N(n29:x)" />
+                <Wire Id="w50" Joints="N(n49:size\(s\)) N(n46:y)" />
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>
